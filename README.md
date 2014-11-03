@@ -14,6 +14,7 @@ está cometiendo con ese ajuste.
 2. Realizar nuevas predicciones.
 
 Entrada de datos
+
 La entrada de datos consistirá en dos bloques. El primero comenzará con la palabra observaciones. En la siguiente línea tendremos la fecha en formato `YYYY-MM-DD hh:mm` y la observación de producción junto con el módulo de la velocidad de viento. Como máximo se incluirán las observaciones de un año, pero pueden ser menos. El segundo bloque estará delimitado por la palabra predicciones y contendrá lineas con la fecha y hora y el módulo de la velocidad de
 viento. La entrada terminará con el carácter de fin de archivo. Las observaciones y las predicciones de entrada pueden no estar ordenadas. Ejemplo:
 
@@ -27,6 +28,7 @@ predicciones
 ```
 
 Salida de datos
+
 La salida de datos consistirá en varias partes. La primera parte será la recta de ajuste, primero la pendiente y luego la ordenada en el origen, con dos decimales de precisión. La segunda parte consistirá en el error por trimestre que se está cometiendo en ese ajuste respecto a los datos de producción proporcionados, con dos decimales de precisión. La última parte consistirá en la predicción que se daría de producción para cada uno de los valores introducidos en la parte predicciones de la entrada, pero de forma ordenada, sin decimales. Ejemplo:
 
 ```
