@@ -8,12 +8,13 @@ Se desea elaborar un sencillo sistema de predicción de producción de energía 
 En este caso vamos a suponer que hubiera una relación lineal entre módulo de velocidad de viento y la producción de energía. A través de los datos de producción de energía y el módulo de velocidad de viento se trata de obtener una recta que proporcione la producción de energía a partir de la velocidad de viento. El ajuste de esta recta se hará por mínimos cuadrados.
 
 El ajuste obtenido se utilizará para dos cosas:
-1.- Calcular el error medio absoluto, sum(abs(observacion – prediccion))/n, por trimestre que se
+
+1. Calcular el error medio absoluto, `sum(abs(observacion – prediccion))/n`, por trimestre que se
 está cometiendo con ese ajuste.
-2.- Realizar nuevas predicciones.
+2. Realizar nuevas predicciones.
 
 Entrada de datos
-La entrada de datos consistirá en dos bloques. El primero comenzará con la palabra observaciones. En la siguiente línea tendremos la fecha en formato YYYY-MM-DD hh:mm y la observación de producción junto con el módulo de la velocidad de viento. Como máximo se incluirán las observaciones de un año, pero pueden ser menos. El segundo bloque estará delimitado por la palabra predicciones y contendrá lineas con la fecha y hora y el módulo de la velocidad de
+La entrada de datos consistirá en dos bloques. El primero comenzará con la palabra observaciones. En la siguiente línea tendremos la fecha en formato `YYYY-MM-DD hh:mm` y la observación de producción junto con el módulo de la velocidad de viento. Como máximo se incluirán las observaciones de un año, pero pueden ser menos. El segundo bloque estará delimitado por la palabra predicciones y contendrá lineas con la fecha y hora y el módulo de la velocidad de
 viento. La entrada terminará con el carácter de fin de archivo. Las observaciones y las predicciones de entrada pueden no estar ordenadas. Ejemplo:
 
 ```
@@ -39,6 +40,7 @@ En el archivo adjunto datos_problema.txt hay unos datos de ejemplo como entrada 
 La solución se puede realizar tanto en C como en C++. No se puede utilizar ninguna biblioteca
 que no forme parte del estándar.
 Criterios de valoración:
+
 1. Corrección
 2. Eficiencia
 3. Documentación y organización del código
